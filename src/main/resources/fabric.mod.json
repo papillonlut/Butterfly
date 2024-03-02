@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "butterfly",
+	"version": "${version}",
+	"name": "Butterfly",
+	"description": "Butterfly Mod made by a Butterfly (My name is Papillonlut)",
+	"authors": [
+		"Papillonlut"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"fr.papillonlut.butterfly.Butterfly"
+		],
+		"client": [
+			"fr.papillonlut.butterfly.ButterflyClient"
+		],
+		"fabric-datagen": [
+			"fr.papillonlut.butterfly.ButterflyDataGenerator"
+		]
+	},
+	"mixins": [
+		"butterfly.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
